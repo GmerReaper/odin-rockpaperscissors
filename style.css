@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #1a1a2e;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+
+#startGame {
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    background-color: #e94560;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+#startGame:hover {
+    background-color: #c73652;
+}
+
+#results {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+#finalResult {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#resultImage {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+
+#victoryImg, #losingImg {
+    width: 400px;
+    display: block;
+    margin: 0 auto;
+}

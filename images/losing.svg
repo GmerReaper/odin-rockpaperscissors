@@ -1,0 +1,53 @@
+<svg width="100%" viewBox="0 0 690 410" role="img" xmlns="http://www.w3.org/2000/svg" style="max-width: 690px; display: block; margin-inline: auto;">
+<title>Losing animation</title>
+<desc>An animated sad face with falling tears and losing text</desc>
+<style>
+  .face { fill: #e8c84a; }
+  .eye { fill: #3a3a3a; }
+  .tear { fill: #5aa9e6; }
+  .text-lose { font-family: Arial, sans-serif; font-size: 52px; font-weight: bold; fill: #e05c5c; text-anchor: middle; }
+
+  #face-group {
+    animation: shake 0.5s ease-in-out infinite alternate;
+    transform-origin: 340px 180px;
+  }
+  #tear1 { animation: drip 1.2s ease-in infinite; transform-origin: 296px 190px; }
+  #tear2 { animation: drip 1.2s ease-in infinite 0.4s; transform-origin: 384px 190px; }
+  #lose-text { animation: wobble 0.6s ease-in-out infinite alternate; transform-origin: 340px 340px; }
+
+  @keyframes shake {
+    from { transform: translateX(-4px); }
+    to { transform: translateX(4px); }
+  }
+  @keyframes drip {
+    0% { transform: translateY(0px); opacity: 1; }
+    100% { transform: translateY(40px); opacity: 0; }
+  }
+  @keyframes wobble {
+    from { transform: scale(1) rotate(-2deg); }
+    to { transform: scale(1.05) rotate(2deg); }
+  }
+</style>
+
+<rect width="680" height="400" fill="transparent"></rect>
+
+<g id="face-group">
+  <circle class="face" cx="340" cy="180" r="110"></circle>
+  <ellipse class="eye" cx="300" cy="155" rx="14" ry="16"></ellipse>
+  <ellipse class="eye" cx="380" cy="155" rx="14" ry="16"></ellipse>
+  <ellipse fill="#ffe87a" cx="296" cy="150" rx="5" ry="6"></ellipse>
+  <ellipse fill="#ffe87a" cx="376" cy="150" rx="5" ry="6"></ellipse>
+  <path d="M295,225 Q340,195 385,225" fill="none" stroke="#3a3a3a" stroke-width="6" stroke-linecap="round"></path>
+</g>
+
+<g id="tear1">
+  <ellipse class="tear" cx="296" cy="185" rx="7" ry="10"></ellipse>
+  <path class="tear" d="M289,193 Q296,215 296,215 Q303,215 303,193"></path>
+</g>
+<g id="tear2">
+  <ellipse class="tear" cx="384" cy="185" rx="7" ry="10"></ellipse>
+  <path class="tear" d="M377,193 Q384,215 384,215 Q391,215 391,193"></path>
+</g>
+
+<g id="lose-text"><text class="text-lose" x="340" y="345">You lose!</text></g>
+</svg>

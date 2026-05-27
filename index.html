@@ -11,14 +11,20 @@
 <body>
     <h1>Rock Paper Scissors</h1>
 
-<button id="startGame">Play Game</button>
+    <div id="buttons">
+        <button id="rock"><img src="./images/rock.svg" alt="Rock"></button>
+        <button id="paper"><img src="./images/paper.svg" alt="Paper"></button>
+        <button id="scissors"><img src="./images/scissors.svg" alt="Scissors"></button>
+    </div>
+    <p id="roundCounter" style="display:none;">Round 1 / 5</p>
+    <button id="startGame" style="display:none;">Play Again</button>
 
-<div id="results"></div>
-<p id="finalResult"></p>
-<img id="victoryImg" src="./images/victory.svg" style="display:none;">
-<img id="losingImg" src="./images/losing.svg" style="display:none;">
+    <div id="results"></div>
+    <p id="finalResult"></p>
+    <img id="victoryImg" src="./images/victory.svg" style="display:none;">
+    <img id="losingImg" src="./images/losing.svg" style="display:none;">
 
-<script src="rockPaperScissors.js"></script>
+    <script src="rockPaperScissors.js"></script>
 </body>
 
 </html>
